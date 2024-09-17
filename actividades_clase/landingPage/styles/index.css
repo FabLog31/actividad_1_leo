@@ -42,6 +42,10 @@ body {
     /* Color de Fondo */
     background-color: var(--backgroundColor);
     font-family: var(--tipography);
+    /* Para gestionar el Scroll */
+    /* si el contenido sobresale, me quita el scroll horizontal (x) */ 
+    overflow-x: hidden;
+
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -72,6 +76,8 @@ header {
     list-style: none;
     /* separa los elementos */
     gap: 50px;
+    cursor: pointer;
+    color: var(--backgroundColor)
 }
 
 #logo1 {
@@ -80,9 +86,10 @@ header {
 }
 
 /* Banner */
-.container_banner img {
+.container_banner video {
     border-color: 10px solid aqua;
     width: 100vw;
+    /* El "calc" es para poder calcular en CSS */ 
     height: calc(100vh - 70px);
     position: relative;
 }
@@ -93,14 +100,103 @@ header {
 }
 
 .btn_contactanos {
-    background-color: #f2f2f2b9;
+    background-color: var(--backgroundColor);
     color: var(--textColor);
     /* un valor que se ponga arriba y abajo*/
     padding: 20px 30px;
     /* borde de la caja */
     border-radius: 20px;
     position: absolute;
-    bottom: 70%;
+    bottom: 5%;
     left: 34%;
     cursor: pointer;
+}
+
+/* acción de pasar el mouse por encima */
+
+.btn_contactanos:hover{
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+}
+
+/* ----------- Main ------------- */
+
+.contentSection {
+/* border: 5px solid rgb(0, 9, 128); */
+width: 80vw;
+/* Centar un contenedor */
+margin: 100px auto;
+}
+
+.title {
+    color: var(--textColor);
+    /* Tamaño Texto */
+    font-size: 50px;
+    /* texto centrado */ 
+    text-align: center;
+    /* Margen Abajo */
+    margin-bottom: 40px;
+}
+
+.container_article {
+    /* Hereda el ancho del papá -> Section */
+width: 100%;
+display: flex;
+/* centrar elementos */
+justify-content: center;
+align-items: center;
+/* espacio */
+gap: 50px;
+}
+
+.container_article img {
+width: 20%;
+height: 210px;
+border-radius: 30%;
+}
+
+.container_article p {
+width: 70%;
+color: var(--textColor);
+font-size: 30px;
+text-align:Justify;
+line-height: 25px;
+letter-spacing: 1.5px;
+}
+
+.container_article iframe {
+    width: 20%;
+    height: 175px;
+    border-radius: 25%;
+}
+
+/*--------- Galería de Imágenes -----------------*/
+
+.Gallery {
+    /* organizar en cuadrícula, se puede jugar con fracciones o porcentaje (siendo el total 100%) */ 
+    display: grid;
+    /* estos son las filas */ 
+    grid-template-rows: 1fr 1fr;
+    /* estas son las Columnas */ 
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Espacios para las columnas */ 
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gallery img {
+    width: 100%;
+    border-radius: 30%;
+}
+
+footer {
+    border: solid var(--textColor);
+    background-color: var(--primaryColor);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--textColor);
+    margin-top: 100px;
 }
