@@ -112,7 +112,7 @@ header {
     cursor: pointer;
 }
 
-/* acción de pasar el mouse por encima */
+/* acción de pasar el mouse por encima para cambiar el color */
 
 .btn_contactanos:hover{
     background-color: var(--textColor);
@@ -120,6 +120,8 @@ header {
 }
 
 /* ----------- Main ------------- */
+
+/* Para las secciones */
 
 .contentSection {
 /* border: 5px solid rgb(0, 9, 128); */
@@ -149,11 +151,15 @@ align-items: center;
 gap: 50px;
 }
 
+/* Imagen de sección */
+
 .container_article img {
 width: 20%;
 height: 210px;
 border-radius: 30%;
 }
+
+/* Parrafo */ 
 
 .container_article p {
 width: 70%;
@@ -163,6 +169,8 @@ text-align:Justify;
 line-height: 25px;
 letter-spacing: 1.5px;
 }
+
+/* Video y medidas */ 
 
 .container_article iframe {
     width: 20%;
