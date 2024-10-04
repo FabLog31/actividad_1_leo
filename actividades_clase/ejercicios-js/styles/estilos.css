@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    /* background-color: rgb(50, 1, 99);
+    color:brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+    min-height: 100vh;
+    background-color: #040841;
+    display: grid;
+    place-items: center;
+    color: antiquewhite;
+}
+
+.calculadora {
+    background-color: rgb(232, 208, 255);
+    color: #1b1312;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 130PX;
+    padding: 1.5rem;
+    border-radius: 1rem;    
+    gap: 10px;
+}
+.ingresos {
+  
+}
