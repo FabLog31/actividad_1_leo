@@ -26,11 +26,11 @@ Solo se ejecutará el if cuando la condición se cumpla */
 /* let nombreUsuario = prompt("Escriba su nombre de usuario:");
 
 if(nombreUsuario){
-    alert("Hola " + nombreUsuario)
-    console.log("se cumple la condición");
+	alert("Hola " + nombreUsuario)
+	console.log("se cumple la condición");
 }else {
-    alert("Hola");
-    console.log ("No se cumple la condición");
+	alert("Hola");
+	console.log ("No se cumple la condición");
 }*/
 
 //3. Hacer un programa que pida al usuario un número entero y muestre los valores desde cero hasta el número ingresado. 
@@ -38,13 +38,25 @@ if(nombreUsuario){
 /*
 let numero = parseInt(prompt('Ingrese un número'));
 for (let i= 0; i <= numero ; i++) {
-    console.log('Vuelta #', i);
-    document.write(i);
+	console.log('Vuelta #', i);
+	document.write(i);
 }
-    */
+	*/
 
-//4. 
+//4. Hacer un programa que solicite al usuario un texto, si el usuario no ingresa nada seguir solicitando hasta que lo haga.
+/*
+let nombreUsuario;
 
+do {
+  nombreUsuario = prompt("Ingrese su nombre de usuario:");
+  if (nombreUsuario === null || nombreUsuario.trim() === "") {
+	alert("¡Alerta! Por favor, ingrese su nombre de usuario (Obligatorio)");
+  }
+} while (nombreUsuario === null || nombreUsuario.trim() === "");
+
+alert("¡Te doy la bienvenida, " + nombreUsuario + "!" + " Ten un excelente día");
+console.log("¡Bienvenido/a,", nombreUsuario + "!");
+*/
 
 // 5. Hacer una página que muestre los días de la semana
 /*
@@ -61,39 +73,28 @@ console.log(diasSemana[5]);
 console.log(diasSemana[6]);
 
 diasSemana.forEach(
-    (dia) => {
-        console.log(dia);
-    }
+	(dia) => {
+		console.log(dia);
+	}
 )
-
 */
 
+//6. Hacer un programa que pida al usuario dos números, mostrar la suma y la resta del primer número y el segundo número.
+/*
+let numero1 = parseFloat(prompt("Ingrese el primer número:"));
+let numero2 = parseFloat(prompt("Ingrese el segundo número:"));
 
+if (!isNaN(numero1) && !isNaN(numero2)) {
+	let suma = numero1 + numero2;
+	let resta = numero1 - numero2;
+	alert("La suma es: " + suma);
+	alert("La resta es: " + resta);
 
-function sumar() {
-	let num1 = parseInt(document.getElementById("num1").value);
-	let num2 = parseInt(document.getElementById("num2").value);
-	let resultado = num1 + num2;
-	document.getElementById("resultado").value = resultado;
-}
+	console.log("La suma de los dos números es:", suma);
+	console.log("La resta del primer número menos el segundo es:", resta);
 
-function restar() {
-	let num1 = parseInt(document.getElementById("num1").value);
-	let num2 = parseInt(document.getElementById("num2").value);
-	let resultado = num1 - num2;
-	document.getElementById("resultado").value = resultado;
-}
-
-function multiplicar() {
-	let num1 = parseInt(document.getElementById("num1").value);
-	let num2 = parseInt(document.getElementById("num2").value);
-	let resultado = num1 * num2;
-	document.getElementById("resultado").value = resultado;
-}
-
-function dividir() {
-	let num1 = parseInt(document.getElementById("num1").value);
-	let num2 = parseInt(document.getElementById("num2").value);
-	let resultado = num1 / num2;
-	document.getElementById("resultado").value = resultado;
-}
+} else {
+	alert("Por favor, ingrese solo números.");
+};
+*/
+//7. ESTE EJERCICIO SE ENCUENTRA EN EL DOCUMENTO: DOM.js. Gracias. 
